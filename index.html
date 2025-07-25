@@ -2,19 +2,21 @@
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>????? ?????? ??????? ?????????? ?? ???????</title>
+    <title>???? ????? ?????? ?????????? - ???????</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
     <style>
         * {
-            font-family: 'Tajawal', sans-serif;
+            font-family: 'Tajawal', Tahoma, sans-serif;
         }
         body {
             background: linear-gradient(135deg, #f0f9ff 0%, #e6f7ff 100%);
             min-height: 100vh;
             direction: rtl;
+            text-align: right;
         }
         .disqualified-row {
             background-color: #ffebee;
@@ -53,7 +55,14 @@
             border-color: #3b82f6;
         }
         .arabic-font {
-            font-family: 'Tajawal', Arial, sans-serif;
+            font-family: 'Tajawal', Tahoma, sans-serif;
+        }
+        .teacher-guide {
+            background: #fff8e1;
+            border-left: 4px solid #ffd54f;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
         }
     </style>
 </head>
@@ -65,14 +74,33 @@
                 <div class="flex justify-between items-center">
                     <div class="flex items-center space-x-2">
                         <i class="fas fa-graduation-cap text-2xl"></i>
-                        <span class="text-xl font-bold">????? ??????</span>
+                        <span class="text-xl font-bold">???? ????? ??????</span>
                     </div>
-                    <div>
-                        <a href="#" class="px-4 py-2 bg-white text-blue-800 rounded-lg font-bold hover:bg-blue-100 transition">????? ??????</a>
+                    <div class="flex space-x-3">
+                        <a href="#" class="px-3 py-1 bg-blue-700 rounded-lg hover:bg-blue-600 transition">
+                            <i class="fas fa-user-tie mr-1"></i> ???? ??????
+                        </a>
+                        <a href="#" class="px-3 py-1 bg-blue-700 rounded-lg hover:bg-blue-600 transition">
+                            <i class="fas fa-question-circle mr-1"></i> ????????
+                        </a>
                     </div>
                 </div>
             </div>
         </nav>
+        
+        <!-- ???? ????????? ???????? -->
+        <div class="teacher-guide mb-8">
+            <h3 class="text-xl font-bold text-blue-800 mb-3 flex items-center">
+                <i class="fas fa-chalkboard-teacher mr-2"></i> ???? ??????? ?????? ????????
+            </h3>
+            <ol class="list-decimal list-inside space-y-2 text-slate-700">
+                <li>???? ??? ?????? ??????? ????????</li>
+                <li>???? ????? ?????? ??? ?? ?? ??? ??????</li>
+                <li>??? ??? ??? ?????? ?? ????????? (???? 5%)</li>
+                <li>???? ??? "???? ???????" ?????? ??? ???????</li>
+                <li>????? ????? ??????? ?? ????? ???????? ??????</li>
+            </ol>
+        </div>
         
         <!-- ??????? ??????? -->
         <div class="flex flex-col md:flex-row gap-8 mb-8">
@@ -102,11 +130,25 @@
                 
                 <div class="mt-6 bg-blue-50 p-4 rounded-lg border border-blue-200">
                     <h3 class="font-bold text-blue-800 mb-2 flex items-center">
-                        <i class="fas fa-lightbulb mr-2"></i> ?????
+                        <i class="fas fa-lightbulb mr-2"></i> ????? ?????
                     </h3>
                     <p class="text-slate-700 text-sm">
                         ???? ?? ????? ??????? ??????? ??????. ????? ??????? ??? ?????? ?????? ?????? ???? ???? ?? ?????? ????? ????? ??????.
                     </p>
+                </div>
+                
+                <div class="mt-6">
+                    <h3 class="font-bold text-blue-800 mb-2 flex items-center">
+                        <i class="fas fa-download mr-2"></i> ????? ???????
+                    </h3>
+                    <div class="flex flex-col space-y-2">
+                        <a href="#" class="text-blue-700 hover:text-blue-900 flex items-center">
+                            <i class="fas fa-file-pdf mr-2"></i> ???? ??????? ??????
+                        </a>
+                        <a href="#" class="text-blue-700 hover:text-blue-900 flex items-center">
+                            <i class="fas fa-file-excel mr-2"></i> ????? ??????? ?????? ??????
+                        </a>
+                    </div>
                 </div>
             </div>
             
@@ -114,9 +156,9 @@
             <div class="w-full md:w-2/3">
                 <div class="bg-white rounded-2xl shadow-xl overflow-hidden">
                     <div class="bg-blue-800 text-white p-6">
-                        <h1 class="text-2xl sm:text-3xl font-bold text-center">????? ?????? ??????? ?????????? ?? ???????</h1>
+                        <h1 class="text-2xl sm:text-3xl font-bold text-center">???? ????? ?????? ?????????? ?? ???????</h1>
                         <p class="text-blue-100 text-center mt-2 max-w-2xl mx-auto">
-                            ???? ?????? ????? ???????? ??? ????? ?????? ????????? ?????? ?????? ????? ??? ??????? ?????????.
+                            ???? ?????? ????? ???????? ??? ????? ?????? ????????? ?????? ?????? ????? ??? ??????? ?????????
                         </p>
                     </div>
                     
@@ -124,7 +166,7 @@
                         <!-- ??????? ?????? -->
                         <div class="mb-8 form-section">
                             <h2 class="text-xl font-bold text-blue-800 flex items-center mb-4">
-                                <span class="bg-blue-100 text-blue-800 rounded-full w-8 h-8 flex items-center justify-center mr-2">1</span>
+                                <i class="fas fa-user-graduate mr-3 text-blue-600"></i>
                                 ??????? ??????
                             </h2>
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -132,14 +174,14 @@
                                     <label for="studentName" class="block text-sm font-semibold text-slate-700 mb-1">??? ?????? (????)</label>
                                     <div class="relative">
                                         <i class="fas fa-user absolute left-3 top-1/2 transform -translate-y-1/2 text-slate-400"></i>
-                                        <input type="text" id="studentName" class="w-full pl-10 p-3 border border-slate-300 rounded-lg shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 form-input" placeholder="????: ???? ????">
+                                        <input type="text" id="studentName" class="w-full pl-10 p-3 border border-slate-300 rounded-lg shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 form-input" placeholder="????: ???? ????" value="???? ?? ???">
                                     </div>
                                 </div>
                                 <div>
                                     <label class="block text-sm font-semibold text-slate-700 mb-2">?????? ????????</label>
                                     <div class="flex gap-4">
                                         <label class="flex items-center p-3 border border-slate-300 rounded-lg flex-1 cursor-pointer hover:bg-blue-50 has-[:checked]:bg-blue-100 has-[:checked]:border-blue-500">
-                                            <input type="radio" name="commonStream" value="science" class="form-radio text-blue-600 focus:ring-blue-500" required>
+                                            <input type="radio" name="commonStream" value="science" class="form-radio text-blue-600 focus:ring-blue-500" required checked>
                                             <span class="mr-3 font-semibold text-slate-800">???? ???? ??????????</span>
                                         </label>
                                         <label class="flex items-center p-3 border border-slate-300 rounded-lg flex-1 cursor-pointer hover:bg-blue-50 has-[:checked]:bg-blue-100 has-[:checked]:border-blue-500">
@@ -154,40 +196,40 @@
                         <!-- ????? ?????? -->
                         <div class="mb-8 form-section">
                             <h2 class="text-xl font-bold text-blue-800 flex items-center mb-4">
-                                <span class="bg-blue-100 text-blue-800 rounded-full w-8 h-8 flex items-center justify-center mr-2">2</span>
+                                <i class="fas fa-book-open mr-3 text-blue-600"></i>
                                 ????? ??????
                             </h2>
                             
-                            <div id="scienceGrades" class="hidden">
+                            <div id="scienceGrades">
                                 <p class="text-sm text-slate-500 mb-4">???? ????? ????? ?????? ???????? ?????? ??????? (?? 0 ??? 20).</p>
                                 <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                                     <div>
                                         <label class="block text-sm font-semibold text-slate-700 mb-1">?????????</label>
-                                        <input type="number" step="0.01" min="0" max="20" class="subject-input form-input w-full p-3 border border-slate-300 rounded-lg" placeholder="0-20" data-subject="math" required>
+                                        <input type="number" step="0.01" min="0" max="20" class="subject-input form-input w-full p-3 border border-slate-300 rounded-lg" placeholder="0-20" data-subject="math" required value="15">
                                     </div>
                                     <div>
                                         <label class="block text-sm font-semibold text-slate-700 mb-1">????????</label>
-                                        <input type="number" step="0.01" min="0" max="20" class="subject-input form-input w-full p-3 border border-slate-300 rounded-lg" placeholder="0-20" data-subject="physics" required>
+                                        <input type="number" step="0.01" min="0" max="20" class="subject-input form-input w-full p-3 border border-slate-300 rounded-lg" placeholder="0-20" data-subject="physics" required value="14">
                                     </div>
                                     <div>
                                         <label class="block text-sm font-semibold text-slate-700 mb-1">???? ???????</label>
-                                        <input type="number" step="0.01" min="0" max="20" class="subject-input form-input w-full p-3 border border-slate-300 rounded-lg" placeholder="0-20" data-subject="nature" required>
+                                        <input type="number" step="0.01" min="0" max="20" class="subject-input form-input w-full p-3 border border-slate-300 rounded-lg" placeholder="0-20" data-subject="nature" required value="16">
                                     </div>
                                     <div>
                                         <label class="block text-sm font-semibold text-slate-700 mb-1">????????? ?????????</label>
-                                        <input type="number" step="0.01" min="0" max="20" class="subject-input form-input w-full p-3 border border-slate-300 rounded-lg" placeholder="0-20" data-subject="it" required>
+                                        <input type="number" step="0.01" min="0" max="20" class="subject-input form-input w-full p-3 border border-slate-300 rounded-lg" placeholder="0-20" data-subject="it" required value="17">
                                     </div>
                                     <div>
                                         <label class="block text-sm font-semibold text-slate-700 mb-1">???????????</label>
-                                        <input type="number" step="0.01" min="0" max="20" class="subject-input form-input w-full p-3 border border-slate-300 rounded-lg" placeholder="0-20" data-subject="tech" required>
+                                        <input type="number" step="0.01" min="0" max="20" class="subject-input form-input w-full p-3 border border-slate-300 rounded-lg" placeholder="0-20" data-subject="tech" required value="13">
                                     </div>
                                     <div>
                                         <label class="block text-sm font-semibold text-slate-700 mb-1">????? ???????</label>
-                                        <input type="number" step="0.01" min="0" max="20" class="subject-input form-input w-full p-3 border border-slate-300 rounded-lg" placeholder="0-20" data-subject="arabic_sci" required>
+                                        <input type="number" step="0.01" min="0" max="20" class="subject-input form-input w-full p-3 border border-slate-300 rounded-lg" placeholder="0-20" data-subject="arabic_sci" required value="16">
                                     </div>
                                     <div>
                                         <label class="block text-sm font-semibold text-slate-700 mb-1">?????? ??????????</label>
-                                        <input type="number" step="0.01" min="0" max="20" class="subject-input form-input w-full p-3 border border-slate-300 rounded-lg" placeholder="0-20" data-subject="social" required>
+                                        <input type="number" step="0.01" min="0" max="20" class="subject-input form-input w-full p-3 border border-slate-300 rounded-lg" placeholder="0-20" data-subject="social" required value="15">
                                     </div>
                                 </div>
                             </div>
@@ -218,7 +260,7 @@
                         <!-- ?????? ?????? -->
                         <div class="mb-8 form-section">
                             <h2 class="text-xl font-bold text-blue-800 flex items-center mb-4">
-                                <span class="bg-blue-100 text-blue-800 rounded-full w-8 h-8 flex items-center justify-center mr-2">3</span>
+                                <i class="fas fa-cogs mr-3 text-blue-600"></i>
                                 ?????? ??????
                             </h2>
                             <div class="bg-slate-50 p-4 rounded-lg">
@@ -230,7 +272,12 @@
                                     <label for="desiredStream" class="block text-sm font-semibold text-slate-700 mb-1">?????? ?????? ??????</label>
                                     <div class="relative">
                                         <i class="fas fa-list absolute left-3 top-1/2 transform -translate-y-1/2 text-slate-400"></i>
-                                        <select id="desiredStream" class="w-full pl-10 p-3 border border-slate-300 rounded-lg shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 form-input"></select>
+                                        <select id="desiredStream" class="w-full pl-10 p-3 border border-slate-300 rounded-lg shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 form-input">
+                                            <option value="math_stream">???????</option>
+                                            <option value="tech_math_stream">???? ?????</option>
+                                            <option value="management_stream">????? ???????</option>
+                                            <option value="experimental_stream">???? ???????</option>
+                                        </select>
                                     </div>
                                 </div>
                             </div>
@@ -252,15 +299,16 @@
 
         <!-- ????? ??????? -->
         <div id="resultsContainer" class="hidden mt-6 bg-white rounded-2xl shadow-xl p-6">
-            <h2 class="text-2xl font-bold text-blue-800 mb-4 text-center">????? ??????? ???????</h2>
-            <div class="bg-blue-50 p-6 rounded-lg mb-6">
-                <p class="text-lg text-center">?????? ???????? ???? ??? ??????? ????? ?? ????? ??? "???? ???????"</p>
+            <div class="text-center py-8">
+                <i class="fas fa-chart-bar text-4xl text-blue-500 mb-4"></i>
+                <h3 class="text-xl font-semibold text-blue-800">????? ??? ????? ??????? ??? ????? ????????</h3>
+                <p class="text-slate-600 mt-2">???? ??? ??????? ????? ?? ????? ??? "???? ???????"</p>
             </div>
         </div>
         
         <!-- ??????? ??? ???? ??????? -->
         <div class="mt-8">
-            <details class="bg-white rounded-2xl shadow-lg p-6 cursor-pointer">
+            <details class="bg-white rounded-2xl shadow-lg p-6 cursor-pointer" open>
                 <summary class="text-xl font-bold text-blue-800 flex items-center">
                     <i class="fas fa-question-circle mr-2"></i> ??????? ??? ???? ??????? ???????
                 </summary>
@@ -288,6 +336,7 @@
             </div>
             <p>© 2023 ???? ????? ?????? ?????????? - ????? ??????? ??????? ?????????</p>
             <p class="mt-2">?? ?????? ??????? ???????? ?? ????? ????? ?????? ??? ???????? ?????????? ????????</p>
+            <p class="mt-4 text-xs text-slate-500">??????? 1.0.0 - ?? ??????? ?? 26 ????? 2023</p>
         </footer>
     </div>
 
@@ -322,37 +371,20 @@
                 const selectedStream = document.querySelector('input[name="commonStream"]:checked')?.value;
                 if (!selectedStream) return;
                 
-                desiredStreamSelect.innerHTML = ''; 
-
                 if (selectedStream === 'science') {
                     scienceGradesDiv.classList.remove('hidden');
                     artsGradesDiv.classList.add('hidden');
                     scienceInputs.forEach(input => input.required = true);
                     artsInputs.forEach(input => input.required = false);
-
-                    Object.entries(scienceStreams).forEach(([key, value]) => {
-                        const option = document.createElement('option');
-                        option.value = key;
-                        option.textContent = value;
-                        desiredStreamSelect.appendChild(option);
-                    });
                 } else {
                     artsGradesDiv.classList.remove('hidden');
                     scienceGradesDiv.classList.add('hidden');
                     artsInputs.forEach(input => input.required = true);
                     scienceInputs.forEach(input => input.required = false);
-
-                    Object.entries(artsStreams).forEach(([key, value]) => {
-                        const option = document.createElement('option');
-                        option.value = key;
-                        option.textContent = value;
-                        desiredStreamSelect.appendChild(option);
-                    });
                 }
             };
 
             // ?????? ???? ??????? ??? ???????
-            document.querySelector('input[name="commonStream"][value="science"]').checked = true;
             handleStreamChange();
 
             commonStreamRadios.forEach(radio => radio.addEventListener('change', handleStreamChange));
@@ -429,7 +461,7 @@
                 let explanation = '';
 
                 if (isTop5) {
-                    const desiredAvg = results[desiredStreamKey].average;
+                    const desiredAvg = results[desiredStreamKey]?.average || 0;
                     if (desiredAvg >= 10) {
                         finalRecommendation = results[desiredStreamKey];
                         explanation = `??? ?? ?????? ${studentName} ?? ???? 5% ?? ????? ?????? ??? ??????? ?????? "${finalRecommendation.name}"? ?????? ??? (${desiredAvg.toFixed(2)}) ???? ?? ?? ????? 10? ??? ?????? ??????? ????? ??.`;
@@ -638,13 +670,23 @@
             
             // ????? ????? ???????
             form.addEventListener('reset', () => {
-                scienceGradesDiv.classList.add('hidden');
+                scienceGradesDiv.classList.remove('hidden');
                 artsGradesDiv.classList.add('hidden');
                 desiredStreamContainer.classList.add('hidden');
                 resultsContainer.classList.add('hidden');
                 document.querySelector('input[name="commonStream"][value="science"]').checked = true;
-                handleStreamChange();
                 isTop5PercentCheckbox.checked = false;
+                
+                // ????? ????? ?????
+                scienceInputs.forEach(input => {
+                    if(input.dataset.subject === 'math') input.value = '15';
+                    else if(input.dataset.subject === 'physics') input.value = '14';
+                    else if(input.dataset.subject === 'nature') input.value = '16';
+                    else if(input.dataset.subject === 'it') input.value = '17';
+                    else if(input.dataset.subject === 'tech') input.value = '13';
+                    else if(input.dataset.subject === 'arabic_sci') input.value = '16';
+                    else if(input.dataset.subject === 'social') input.value = '15';
+                });
             });
         });
     </script>
